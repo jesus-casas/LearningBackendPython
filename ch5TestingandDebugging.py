@@ -9,19 +9,3 @@ def create_stats_message(strength, wisdom, dexterity):
     total = strength + wisdom + dexterity
     msg = f"You have {strength} strength, {wisdom} wisdom, and {dexterity} dexterity for a total of {total} stats."
     return msg
-
-# Python NUMBERS
-2 + 1
-# 3
-
-2 - 1
-# 1
-
-2 * 2
-# 4
-
-3 / 2
-# 1.5 (a float)
-
-my_int = 5
-my_float = 5.5
