@@ -46,7 +46,7 @@ def get_title(first_name, last_name, job):
     title = first_name + " " + last_name + " the " + job
     return title
 
-# Main function to demonstrate the usage of other functions
+# Main function to demonstrate the usage of the other functions
 def main():
     # Demonstrate area_of_circle
     radius = 5
