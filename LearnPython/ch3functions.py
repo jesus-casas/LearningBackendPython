@@ -1,106 +1,86 @@
-# Chapter 3 learning about functions
+# Chapter 3: Functions 
+# I learned in this chapter how to define functions, pass arguments to functions, 
+# return values from functions, and use default argument values.
+# My notes to help me quickly reference the syntax and concepts of functions in Python.
 
-# defining a function with a parameter needs def keyword
+# Function to calculate the area of a circle
 def area_of_circle(r):
     pi = 3.14
     result = pi * r * r
     return result
 
-radius = 5
-area = area_of_circle(radius)
-print(area)
-# 78.5
-
-# defining a function with multiple parameters
+# Function to subtract two numbers
 def subtract(a, b):
     result = a - b
     return result
 
-# calling the function need to create the function first before calling it
-def main():
-    print("Fantasy Quest is booting up...")
-    print("Game is running!")
-
-main()
-
-# Order of operations we need to define the function before calling 
-# the entry point main() function
-def main():
-    health = 10
-    armor = 5
-    add_armor(health, armor)
-
+# Function to add armor to a player's health
 def add_armor(h, a):
     new_health = h + a
     print_health(new_health)
 
+# Function to print the player's health
 def print_health(new_health):
     print(f"The player now has {new_health} health")
 
-    # call entrypoint last
-main()
-
-# Function with no return
-
+# Function that does nothing and returns None
 def my_func():
     print("I do nothing")
-    return
-    # will return None
-    
-# Multiple return values example use comma to separate the values
+
+# Function to create a warrior title and increase power
 def become_warrior(first_name, last_name, power):
     full_name = first_name + " " + last_name + " the warrior"
     new_power = power + 1
     return full_name, new_power
 
-
-# Don't edit below this line
-
-
-def main():
-    test("Frodo", "Baggins", 5)
-    test("Bilbo", "Baggins", 10)
-    test("Gandalf", "The Grey", 9000)
-
-
-def test(first_name, last_name, power):
-    title_string, power = become_warrior(first_name, last_name, power)
-    print(title_string, "has a power level of:", power)
-
-
-main()
-
-# Arguments VS Parameters example
-# a and b are parameters
+# Function to add two numbers (demonstrating parameters vs arguments)
 def add(a, b):
     return a + b
 
-# 5 and 6 are arguments
-sum = add(5, 6)
-
-# DEFAULT VALUES FOR FUNCTION ARGUMENTS
+# Function with a default argument value
 def get_greeting(email, name="there"):
     print("Hello", name, "welcome! You've registered your email:", email)
 
-# PRINTING VS RETURNING 
+# Function to create a title for a person based on their job
 def get_title(first_name, last_name, job):
     title = first_name + " " + last_name + " the " + job
     return title
 
+# Main function to demonstrate the usage of other functions
+def main():
+    # Demonstrate area_of_circle
+    radius = 5
+    area = area_of_circle(radius)
+    print(f"Area of circle with radius {radius}: {area}")
 
-# Don't touch below this line
+    # Demonstrate subtract
+    difference = subtract(10, 5)
+    print(f"10 - 5 = {difference}")
 
+    # Demonstrate add_armor and print_health
+    health = 10
+    armor = 5
+    add_armor(health, armor)
 
-def test(first_name, last_name, job):
-    title = get_title(first_name, last_name, job)
-    print("First name:", first_name)
-    print("Last name:", last_name)
-    print("Job:", job)
-    print("Title:", title)
-    print("=====================================")
+    # Demonstrate my_func
+    my_func()
 
+    # Demonstrate become_warrior
+    title, power = become_warrior("Frodo", "Baggins", 5)
+    print(f"{title} has a power level of {power}")
 
-test("Frodo", "Baggins", "warrior")
-test("Bilbo", "Baggins", "thief")
-test("Gandalf", "The Grey", "wizard")
-test("Aragorn", "Son of Arathorn", "ranger")
+    # Demonstrate add (parameters vs arguments)
+    sum = add(5, 6)
+    print(f"5 + 6 = {sum}")
+
+    # Demonstrate get_greeting with default argument
+    get_greeting("frodo@example.com")
+    get_greeting("bilbo@example.com", "Bilbo")
+
+    # Demonstrate get_title
+    title = get_title("Gandalf", "The Grey", "wizard")
+    print(title)
+
+# Entry point of the program
+if __name__ == "__main__":
+    main()
