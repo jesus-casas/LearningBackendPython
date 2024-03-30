@@ -1,3 +1,7 @@
+# Chapter 1: Introduction
+# I learned in this chapter how to print strings, perform basic math operations.
+# My notes to help me quickly reference the syntax and concepts of functions in Python.
+
 def main():
     # Example: Printing strings
     print("This is an example of printing strings:")

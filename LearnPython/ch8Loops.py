@@ -1,4 +1,4 @@
-# Chapter 8 Loops
+# Chapter 8: Loops
 # I learned in this chapter how to use loops in Python to repeat code blocks.
 # My notes to help me quickly reference the syntax and concepts of loops in Python.
 

@@ -1,4 +1,4 @@
-# Chapter 4 Scope 
+# Chapter 4: Scope 
 # I learned in this chapter trying to access a variable outside of its scope will result in an error
 # My notes to help me quickly reference the syntax and concepts of scope in Python.
 

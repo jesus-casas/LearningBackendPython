@@ -1,4 +1,8 @@
-# Chapter 5 Testing and Debugging
+# Chapter 5: Testing and Debugging
+# I learned in this chapter how to test and debug code in Python.
+# My notes to help me quickly reference the syntax and concepts of testing and debugging in Python.
+
+
 def unlock_achievement(before_xp, ach_xp, ach_name):
     new_xp = before_xp + ach_xp
     ach_message = "Achievement Unlocked: " + ach_name

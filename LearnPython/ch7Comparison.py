@@ -1,4 +1,5 @@
 # Chapter 7 Comparison Operators
+# I learned in this chapter how to use comparison operators in Python.
 # Objective: This program demonstrates the use of comparison operators in Python.
 5 < 6 # evaluates to True
 5 > 6 # evaluates to False

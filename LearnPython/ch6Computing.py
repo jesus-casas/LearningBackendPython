@@ -1,5 +1,8 @@
-# Chapter 6 Computing with Numbers
-# Python NUMBERS
+# Chapter 6: Computing with Python Numbers
+# I learned in this chapter how to perform basic math operations in Python including addition, subtraction, multiplication, division, floor division, 
+# and exponentiation. I also learned about scientific notation, underscores for readability, logical operators, comparison operators, and bitwise operators.
+# My notes to help me quickly reference the syntax and concepts of computing with Python numbers.
+
 2 + 1
 # 3
 
