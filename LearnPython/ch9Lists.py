@@ -25,9 +25,24 @@ def main():
     # Indexes: Bob = 0, Lane = 1, Alice = 2, Breanna = 3 
     names = ["Bob", "Lane", "Alice", "Breanna"]
 
-
-
-
+    # Example: Accessing elements in a list
+    print("Example: Accessing elements in a list")
+    best_languages = ["JavaScript", "Go", "Rust", "Python", "C"]
+    print(best_languages[1])
+    # prints "Go", because index 1 was provided
+    print(best_languages[3])
+    # prints "Python", because index 3 was provided
+    
+    print ("=====================================")
+    print("Example: List length")
+    length = len(best_languages)
+    print(length) 
+    # prints 5, because there are 5 elements in the list
+    print ("=====================================")
+    print("Example: List updates")
+    best_languages[1] = "Ruby"
+    print(best_languages[1])
+    # prints "Ruby" now, because we updated the value at index 1 to "Ruby"
 
 
 
