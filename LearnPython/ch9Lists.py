@@ -85,8 +85,31 @@ def main():
     # oak
     # pine
     # maple
-    print ("=====================================")
     
+    print ("=====================================")
+    print("Example: List Find an item in a list")
+    current_inventory = ["Iron Breastplate", "Healing Potion", "Leather Scraps"]
+    def contains_leather_scraps(items):
+        found = False
+        # 
+        for item in items:
+            if item == "Leather Scraps":
+                found = True
+        # 
+
+        return found
+    print(contains_leather_scraps(current_inventory))
+    
+    print ("=====================================")
+    print("Example: List Find the Difference Between Two Lists")
+    old_character_levels = [1, 42, 43, 53, 12, 3, 32, 34, 54, 32, 43]
+    new_character_levels = [1, 42, 45, 54, 12, 3, 32, 38, 54, 32, 42]
+
+    for i in range(0, len(old_character_levels)):
+        if new_character_levels[i] > old_character_levels[i]:
+            print(i) # prints 2, 3, 7, 10 the indexes of the levels that increased
+
+
 # This block checks if the script is being run directly on system.
 # If it is run directly, the main() function is called.
 # This is a common pattern used to organize code in Python scripts.
