@@ -43,7 +43,20 @@ def main():
     best_languages[1] = "Ruby"
     print(best_languages[1])
     # prints "Ruby" now, because we updated the value at index 1 to "Ruby"
-
+    print ("=====================================")
+    print("Example: List append")
+    best_languages.append("Go")
+    print(best_languages)
+    # prints ["JavaScript", "Ruby", "Rust", "Python", "C", "Go"]
+    # because we added "Go" to the end of the list with .append()
+    print ("=====================================")
+    print("Example: List pop")
+    vegetables = ["broccoli", "cabbage", "kale", "tomato"];
+    last_vegetable = vegetables.pop()
+    print(last_vegetable)
+    # vegetables = ['broccoli', 'cabbage', 'kale']
+    # last_vegetable = 'tomato'
+    
 
 
 # This block checks if the script is being run directly on system.
