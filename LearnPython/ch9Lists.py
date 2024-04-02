@@ -4,7 +4,27 @@
 # Called lists not arrays in Python
 
 def main():
+    # Example: Creating a list strings, numeric values, and boolean values can all be stored in a list
     inventory = ["Iron Breastplate", "Healing Potion", "Leather Scraps"]
+
+    # Declaring lists on multiple lines to improve readability
+    flower_types = [
+    "daffodil",
+    "rose",
+    "chrysanthemum"
+    ]
+    # Example: Lists can contain different types of variables
+    player_ages = [
+        23,
+        18,
+        31,
+        42
+    ]
+    
+    #Counting in Python starts at 0
+    # Indexes: Bob = 0, Lane = 1, Alice = 2, Breanna = 3 
+    names = ["Bob", "Lane", "Alice", "Breanna"]
+
 
 
 
