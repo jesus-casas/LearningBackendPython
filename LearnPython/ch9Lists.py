@@ -129,15 +129,15 @@ def main():
     
     
     print("=====================================")
-    Print("Example: List Operations - Concatenation")
+    print("Example: List Operations - Concatenation")
     
     
     print("=====================================")
-    Print("Example: List Operations - Contains")
+    print("Example: List Operations - Contains")
     
     
     print("=====================================")
-    Print("Example: List Operations - Deletion")
+    print("Example: List Operations - Deletion")
     
     
     print("=====================================")
