@@ -107,9 +107,55 @@ def main():
 
     for i in range(0, len(old_character_levels)):
         if new_character_levels[i] > old_character_levels[i]:
-            print(i) # prints 2, 3, 7, 10 the indexes of the levels that increased
+            print(i) # prints 2, 3, 7 the indexes of the levels that increased
 
-
+    print ("=====================================")
+    print("Example: Find max number with help from negative infinity")
+    numbers = [1, 2, 3, 4, 5]
+    def find_max(numbers):
+        # float("-inf") is negative infinity float("inf") is positive infinity
+        max_number = float("-inf")
+        for number in numbers:
+            if number > max_number:
+                max_number = number
+        return max_number
+    print(find_max(numbers)) # prints 5
+    
+    print("=====================================")
+    print("Example: Modulo Operator in Python")
+    
+    print("=====================================")
+    print("Example: Slicing Lists")
+    
+    
+    print("=====================================")
+    Print("Example: List Operations - Concatenation")
+    
+    
+    print("=====================================")
+    Print("Example: List Operations - Contains")
+    
+    
+    print("=====================================")
+    Print("Example: List Operations - Deletion")
+    
+    
+    print("=====================================")
+    print("Example: Tuples")
+    
+    
+    print("=====================================")
+    print("Example: First Element")
+    
+    
+    print("=====================================")
+    print("Example: Reverse List")
+    
+    print("=====================================")
+    print("Example: Filter Messages")
+    
+    print("=====================================")
+    print("End of chapter 9 notes")
 # This block checks if the script is being run directly on system.
 # If it is run directly, the main() function is called.
 # This is a common pattern used to organize code in Python scripts.
