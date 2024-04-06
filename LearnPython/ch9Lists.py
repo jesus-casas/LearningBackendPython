@@ -191,12 +191,29 @@ def main():
     print("=====================================")
     print("Example: Tuples")
     
-    
+    my_tuple = ("this is a tuple", 45, True)
+    print(my_tuple[0])
+    # this is a tuple
+    print(my_tuple[1])
+    # 45
+    print(my_tuple[2])
+    # True
+
+    my_tuples = [("this is the first tuple in the list", 45, True),("this is the second tuple in the list", 21, False)]
+    print(my_tuples[0][0]) # this is the first tuple in the list
+    print(my_tuples[0][1]) # 45
+    print(my_tuples[1][0]) # this is the second tuple in the list
+    print(my_tuples[1][2]) # False
     
     print("=====================================")
     print("Example: First Element")
     
-    
+    def get_first_item(items):
+        if len(items) == 0: # if the list is empty return "ERROR"
+            return "ERROR"
+        return items[0]     # return the first element in the list
+
+    print(get_first_item([1, 2, 3])) # 1
     
     print("=====================================")
     print("Example: Reverse List")
@@ -212,6 +229,28 @@ def main():
     
     print("=====================================")
     print("Example: Filter Messages")
+    
+    def filter_messages(messages): # remove the word "dang" from the messages
+        # create an empty list to store the filtered messages
+        filtered_messages = []
+        words_removed = []
+        # iterate over each message in the list
+        for message in messages:
+            words = message.split()
+            new_words = []
+            removed = 0
+            # iterate over each word in the message
+            for word in words:
+                if word == "dang": # if the word is "dang" increment removed by 1
+                    removed += 1
+                else:
+                    new_words.append(word) # add the word to the new_words list
+            filtered_messages.append(" ".join(new_words))
+            words_removed.append(removed)
+
+        return filtered_messages, words_removed
+
+    print(filter_messages(["dang it he got me", "I need backup", "Look at it go"]))
     
     print("=====================================")
     print("End of chapter 9 notes")
