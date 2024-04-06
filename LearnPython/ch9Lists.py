@@ -139,6 +139,7 @@ def main():
     
     print("=====================================")
     print("Example: Slicing Lists")
+    
     # my_list[ start : stop : step ]
     numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     print(numbers)  # Gives [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -168,17 +169,46 @@ def main():
     print("=====================================")
     print("Example: List Operations - Deletion")
     
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    # delete the fourth item
+    del nums[3]
+    print(nums)
+    # Output: [1, 2, 3, 5, 6, 7, 8, 9]
+
+    # delete the second item up to (but not including) the fourth item
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    del nums[1:3]
+    print(nums)
+    # Output: [1, 4, 5, 6, 7, 8, 9]
+
+    # delete all elements
+    nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    del nums[:]
+    print(nums)
+    # Output: []
     
     print("=====================================")
     print("Example: Tuples")
+    
     
     
     print("=====================================")
     print("Example: First Element")
     
     
+    
     print("=====================================")
     print("Example: Reverse List")
+    
+    items = [1, 2, 3, 4, 5]
+    
+    def reverse_array(items):
+        array = []
+        for item in range(len(items)-1,-1,-1):
+            array.append(items[item])
+        return array
+    print(reverse_array(items))
     
     print("=====================================")
     print("Example: Filter Messages")
