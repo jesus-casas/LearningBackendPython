@@ -35,18 +35,21 @@ def main():
     
     print ("=====================================")
     print("Example: List length")
+    
     length = len(best_languages)
     print(length) 
     # prints 5, because there are 5 elements in the list
     
     print ("=====================================")
     print("Example: List updates")
+    
     best_languages[1] = "Ruby"
     print(best_languages[1])
     # prints "Ruby" now, because we updated the value at index 1 to "Ruby"
     
     print ("=====================================")
     print("Example: List append")
+    
     best_languages.append("Go")
     print(best_languages)
     # prints ["JavaScript", "Ruby", "Rust", "Python", "C", "Go"]
@@ -54,6 +57,7 @@ def main():
     
     print ("=====================================")
     print("Example: List pop")
+    
     vegetables = ["broccoli", "cabbage", "kale", "tomato"];
     last_vegetable = vegetables.pop()
     print(last_vegetable)
@@ -62,6 +66,7 @@ def main():
     
     print ("=====================================")
     print("Example: Counting elements in a list")
+    
     broccoli_count = 0
     cabbage_count = 0
     kale_count = 0
@@ -78,6 +83,7 @@ def main():
     
     print ("=====================================")
     print("Example: No-index Syntax")
+    
     trees = ['oak', 'pine', 'maple']
     for tree in trees:
         print(tree)
@@ -88,6 +94,7 @@ def main():
     
     print ("=====================================")
     print("Example: List Find an item in a list")
+    
     current_inventory = ["Iron Breastplate", "Healing Potion", "Leather Scraps"]
     def contains_leather_scraps(items):
         found = False
@@ -96,12 +103,12 @@ def main():
             if item == "Leather Scraps":
                 found = True
         # 
-
         return found
     print(contains_leather_scraps(current_inventory))
     
     print ("=====================================")
     print("Example: List Find the Difference Between Two Lists")
+    
     old_character_levels = [1, 42, 43, 53, 12, 3, 32, 34, 54, 32, 43]
     new_character_levels = [1, 42, 45, 54, 12, 3, 32, 38, 54, 32, 42]
 
@@ -111,6 +118,7 @@ def main():
 
     print ("=====================================")
     print("Example: Find max number with help from negative infinity")
+    
     numbers = [1, 2, 3, 4, 5]
     def find_max(numbers):
         # float("-inf") is negative infinity float("inf") is positive infinity
@@ -126,7 +134,17 @@ def main():
     
     print("=====================================")
     print("Example: Slicing Lists")
-    
+    # my_list[ start : stop : step ]
+    numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print(numbers)  # Gives [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    print("Example: numbers[:3]")
+    print(numbers[:3]) # Gives [0, 1, 2]
+    print("Example: numbers[3:]")
+    print(numbers[3:]) # Gives [3, 4, 5, 6, 7, 8, 9]
+    print("Example: numbers[::2]")
+    print(numbers[::2]) # Gives [0, 2, 4, 6, 8]
+    print("Example: numbers[-3:]")
+    print(numbers[-3:]) # Gives [7, 8, 9]
     
     print("=====================================")
     print("Example: List Operations - Concatenation")
@@ -134,7 +152,10 @@ def main():
     
     print("=====================================")
     print("Example: List Operations - Contains")
-    
+    fruits = ["apple", "orange", "banana"]
+    print("banana" in fruits)
+    # Prints: True
+
     
     print("=====================================")
     print("Example: List Operations - Deletion")
