@@ -132,6 +132,11 @@ def main():
     print("=====================================")
     print("Example: Modulo Operator in Python")
     
+    for i in range(0, 10):
+        
+        if i % 2 == 1: # if i is odd print
+            print(i)
+    
     print("=====================================")
     print("Example: Slicing Lists")
     # my_list[ start : stop : step ]
@@ -149,13 +154,16 @@ def main():
     print("=====================================")
     print("Example: List Operations - Concatenation")
     
+    total = [1, 2, 3] + [4, 5, 6]
+    print(total)
+    # Prints: [1, 2, 3, 4, 5, 6]
     
     print("=====================================")
     print("Example: List Operations - Contains")
+    
     fruits = ["apple", "orange", "banana"]
     print("banana" in fruits)
     # Prints: True
-
     
     print("=====================================")
     print("Example: List Operations - Deletion")
@@ -177,6 +185,7 @@ def main():
     
     print("=====================================")
     print("End of chapter 9 notes")
+    
 # This block checks if the script is being run directly on system.
 # If it is run directly, the main() function is called.
 # This is a common pattern used to organize code in Python scripts.
