@@ -57,6 +57,55 @@ def main():
     print(names_dict)
     # Prints: {'jack': 'bronson', 'jill': 'mcarty', 'john': 'denver'}
 
+    print("=====================================")
+    print("Example: Updating Dictionary Values")
+    # You can update the value of a specific key in a dictionary by providing the key and the new value.
+    full_names = ["jack bronson", "james mcarty", "jack denver"]
+
+    names_dict = {}
+    for full_name in full_names:
+        # .split() returns a list of strings
+        # where each string is a single word from the original
+        names = full_name.split()
+        first_name = names[0]
+        last_name = names[1]
+        names_dict[first_name] = last_name
+
+    print(names_dict)
+    # Prints
+    # {
+    #   'jack': 'denver',
+    #   'james': 'mcarty'
+    # }
+    # Since the key 'jack' is repeated, the value is updated to 'denver'.
+    
+    print("=====================================")
+    print("Example: Deleting Dictionary Values")
+    # You can delete a key-value pair from a dictionary by using the del keyword.
+    
+    names_dict = {
+        'jack': 'bronson',
+        'jill': 'mcarty',
+        'joe': 'denver'
+    }
+    # Syntax: del dictionary[key]
+    del names_dict['joe']
+
+    print(names_dict)
+    # Now Prints: {'jack': 'bronson', 'jill': 'mcarty'}
+    
+    print("=====================================")
+    print("Example: Deleting keys that don't exist")
+    # If you try to delete a key that doesn't exist in the dictionary, you'll get a KeyError.
+    names_dict = {
+        'jack': 'bronson',
+        'jill': 'mcarty',
+        'joe': 'denver'
+    }
+    print("Uncomment the code below to see the error. Left commented to avoid error.")
+    # del names_dict['unknown'] # ERROR HERE, key doesn't exist 
+    # ERROR HERE, key doesn't exist
+
     
     
 # This block checks if the script is being run directly on system.
