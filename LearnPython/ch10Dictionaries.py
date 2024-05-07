@@ -106,6 +106,44 @@ def main():
     # del names_dict['unknown'] # ERROR HERE, key doesn't exist 
     # ERROR HERE, key doesn't exist
 
+    print("=====================================")
+    print("Example: Checking if a key exists.")
+    cars = {
+        'ford': 'f150',
+        'tesla': '3'
+    }
+
+    print('ford' in cars)
+    # Prints: True
+
+    print('gmc' in cars)
+    # Prints: False
+
+    print("=====================================")
+    print("Example: Iterating over a dictionary")
+    # You can iterate over a dictionary using a for loop.
+
+    fruit_sizes = {
+        "apple": "small",
+        "banana": "large",
+        "grape": "tiny"
+    }
+
+    for name in fruit_sizes:
+        size = fruit_sizes[name]
+        print(f"name: {name}, size: {size}")
+        
+    # name: apple, size: small
+    # name: banana, size: large
+    # name: grape, size: tiny
+
+    print ("=====================================")
+    print("Ordered or Unordered Dictionaries?")
+    print("Dictionaries are ordered in Python 3.7 and in Python 3.6 and earlier, dictionaries were unordered.")
+    print("With ordered dictionaries, the order of the keys is preserved. So when you iterate over a dictionary, the keys will be in the order they were added.")
+
+    print("=====================================")
+    print("End of chapter 10 notes")
     
     
 # This block checks if the script is being run directly on system.
