@@ -145,7 +145,6 @@ def main():
     print("=====================================")
     print("End of chapter 10 notes")
     
-    
 # This block checks if the script is being run directly on system.
 # If it is run directly, the main() function is called.
 # This is a common pattern used to organize code in Python scripts.
