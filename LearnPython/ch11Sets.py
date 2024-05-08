@@ -17,7 +17,23 @@ def main():
     print(fruits)
     # Prints: {'banana', 'grape', 'apple'}
 
+    print("=====================================")
+    print("Example: Adding elements to a set")
+    # fruits from previous example
+    # Syntax: set_name.add('element')
+    fruits.add('pear')
+    print(fruits)
+    # Prints: {'banana', 'grape', 'pear', 'apple'}
     
+    print("=====================================")
+    print("Example: Empty set")
+    # Syntax: set_name = set()
+    fruit = set()
+    fruit.add('pear')
+    print(fruits)
+    # Prints: {'pear'}
+
+
     print("=====================================")
     print("End of chapter 11 notes")
 
