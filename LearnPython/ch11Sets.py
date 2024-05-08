@@ -30,7 +30,7 @@ def main():
     # Syntax: set_name = set()
     fruit = set()
     fruit.add('pear')
-    print(fruits)
+    print(fruit)
     # Prints: {'pear'}
 
 
