@@ -33,6 +33,25 @@ def main():
     print(fruit)
     # Prints: {'pear'}
 
+    print("=====================================")
+    print("Example: Removing elements from a set")
+    # fruits from previous example
+    # Syntax: set_name.remove('element')
+    fruits.remove('banana')
+    print(fruits)
+    # Prints: {'grape', 'pear', 'apple'}
+    
+    
+    print("=====================================")
+    print("Example: iterating over a set")
+    print("Order of elements in a set is not guaranteed.")
+    fruits = {'apple', 'banana', 'grape'}
+    for fruit in fruits:
+        print(fruit)
+        # Prints:
+        # banana
+        # grape
+        # apple
 
     print("=====================================")
     print("End of chapter 11 notes")
