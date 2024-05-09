@@ -41,7 +41,6 @@ def main():
     print(fruits)
     # Prints: {'grape', 'pear', 'apple'}
     
-    
     print("=====================================")
     print("Example: iterating over a set")
     print("Order of elements in a set is not guaranteed.")
